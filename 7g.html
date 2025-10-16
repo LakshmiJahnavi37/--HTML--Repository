@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Date Object Properties and methods
+        </title>
+    </head>
+    <body>
+        <script>
+            var d =new Date();
+            document.write("1.Year : "+d.getFullYear()+"<br>")
+            document.write("2.Month: "+d.getMonth()+"<br>")
+            document.write("3.Date : "+d.getDate()+"<br>")
+            document.write("4.Day : "+d.getDay()+"<br>")
+            document.write("5.Hours: "+d.getHours()+"<br>")
+            document.write("6.Minutes : "+d.getMinutes()+"<br>")
+            document.write("7.Seconds : "+d.getSeconds()+"<br>")
+            document.write("8.Milli Seconds : "+d.getMilliseconds()+"<br>")
+            document.write("9.Date String: " + d.toDateString() + "<br>");
+            document.write("10.Time String: " + d.toTimeString() + "<br>");
+            document.write("11.Locale Date: " + d.toLocaleDateString() + "<br>");
+            document.write("12.Locale Time: " + d.toLocaleTimeString() + "<br>");
+            let custom = new Date(); 
+            custom.setFullYear(2030);
+            custom.setMonth(11);
+            custom.setDate(25); 
+            custom.setHours(10);
+            document.write("13. Custom Full Year (set): " + custom.getFullYear() + "<br>");
+            document.write("14. Custom Month (set): " + custom.getMonth() + "<br>");
+            document.write("15. Custom Date (set): " + custom.getDate() + "<br>");
+            document.write("16. Custom Hours (set): " + custom.getHours() + "<br><br>");
+
+
+        </script>
+    </body>
+</html>

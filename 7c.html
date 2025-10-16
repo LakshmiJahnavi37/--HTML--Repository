@@ -1,0 +1,37 @@
+<html>
+<body>
+	<script>
+		var a = [18, 45, 7, 77, 33];
+		document.title ="Document"
+		document.write(a+"<br>");
+		document.write("Length of array is " + a.length+"<br>");
+		a.push(20);
+		document.write("Pushing element: " + a + "<br>");
+		a.pop();
+		document.write("Pop: " + a + "<br>");
+		a.unshift(1);
+		document.write("Unshifting: " + a + "<br>");
+		a.shift();
+		document.write("Shifting: " + a + "<br>");
+		a.sort(function(x,y){ return x-y; }); 
+		document.write("After sort(): " + a + "<br>");
+		a.reverse();
+		document.write("Reversal: " + a + "<br>");
+		document.write("toString(): " + a.toString() + "<br>");
+		document.write("Concatenating 200 and 300: " + a.concat([200, 300]) + "<br>");
+		document.write("slice(1,3): " + a.slice(1, 3) + "<br>");
+		document.write("includes(77): " + a.includes(77) + "<br>");
+		a.splice(2, 0, 99); 
+		document.write("splice add: " + a + "<br>");
+		a.splice(2, 1); 
+		document.write("splice remove: " + a + "<br>");
+		var evens = a.filter(x => x % 2 === 0);
+		document.write("filter(even): " + evens + "<br>");
+		var squares = a.map(x => x * x);
+		document.write("map(square): " + squares + "<br>");
+		document.write("indexOf(45): " + a.indexOf(45) + "<br>");
+		var found = a.find(x => x > 40);
+		document.write("find(x>40): " + found + "<br>");
+</script>
+</body>
+</html>
