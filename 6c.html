@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Methods in JavaScript</title>
+</head>
+<body>
+    <h2>Different Ways to Take Input in JavaScript</h2>
+
+    <!-- 1️⃣ Input using HTML form -->
+    <label>Enter your name: </label>
+    <input type="text" id="nameInput">
+    <button onclick="formInput()">Submit</button>
+    <p id="output1"></p>
+
+    <script>
+        // 2️⃣ Input using prompt()
+        var userName = prompt("Enter your name using prompt:");
+        document.write("Hello " + userName + "! (from prompt input)<br><br>");
+
+        // 3️⃣ Input using HTML form field
+        function formInput() {
+            var name = document.getElementById("nameInput").value;
+            document.getElementById("output1").innerHTML = "Hello " + name + "! (from form input)";
+        }
+
+        // 4️⃣ Input using console (for developers)
+        console.log("You can also take input from console in Node.js using 'readline' module");
+    </script>
+</body>
+</html>

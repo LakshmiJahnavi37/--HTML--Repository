@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Eligibility Check</title>
+</head>
+<body>
+    <h2>Voter Eligibility Check</h2>
+
+    <script>
+        // Take input using prompt
+        var name = prompt("Enter your Name:");
+        var age = prompt("Enter your Age:");
+
+        // Convert age to number
+        age = Number(age);
+
+        // Check voting eligibility
+        var message;
+        if (age >= 18) {
+            message = "Hello " + name + "! You are " + age + " years old and eligible to vote 🗳️";
+        } else {
+            message = "Hello " + name + "! You are " + age + " years old and not eligible to vote ❌";
+        }
+
+        // Display result
+        document.write(message);
+    </script>
+
+</body>
+</html>

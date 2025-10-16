@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output Methods in JavaScript</title>
+</head>
+<body>
+    <h2>Different Ways to Display Output in JavaScript</h2>
+
+    <p id="output1"></p>
+    <p id="output2"></p>
+
+    <script>
+        // 1️⃣ Using alert()
+        alert("This is output using alert()");
+
+        // 2️⃣ Using document.write()
+        document.write("<b>This is output using document.write()</b><br>");
+
+        // 3️⃣ Using console.log()
+        console.log("This is output using console.log()");
+
+        // 4️⃣ Using innerHTML
+        document.getElementById("output1").innerHTML = "This is output using innerHTML";
+
+        // 5️⃣ Using window.prompt() for input + output
+        var name = prompt("Enter your name:");
+        document.getElementById("output2").innerHTML = "Hello, " + name + "! (Displayed using prompt + innerHTML)";
+    </script>
+</body>
+</html>
